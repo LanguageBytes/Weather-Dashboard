@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jass.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Search Bar Column -->
+    <div class="flex-row align-start align-stretch-md align-content-start align-content-stretch-md min-100-vh bg-primary">
+        <div class="col-12 col-md-3 bg-light p-3">
+          <h1 class="text-primary">Weather Dashboard</h1>
+          <form id="search-form" class="mb-2">
+            <input id="search-input" class="form-input w-100" type="text" placeholder="Enter a city name">
+
+            <a href=""><button class="btn">Submit</button></a>
+          </form>
+        </div>
+
+    <!-- Search Results -->
+        <div class="col-12 col-md-9 p-3 text-light">
+          <h2>Showing results for <span id="result-text"></span></h2>
+          <div id="result-content"></div>
+        </div>
+      </div>
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>
