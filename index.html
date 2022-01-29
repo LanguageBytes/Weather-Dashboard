@@ -4,36 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <title> Weather Dashboard </title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="jass.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
      
-    <div class="container">
+   <!-- Title -->
     <header> Weather Dashboard </header>
-     </div>
-    <!-- Search Bar Column -->
+
+                                                 <!-- Search Bar Column Part -->
+        
+       <!-- Search for a city container -->
     <div class="flex-row align-start align-stretch-md align-content-start align-content-stretch-md min-100-vh bg-primary">
         <div class="col-12 col-md-3 bg-light p-3">
-          <h1 class="text-primary">Search for a City</h1>
-          <form id="search-form" class="mb-2">
-            <input id="search-input" class="form-input w-100" type="text" placeholder="Enter a city name">
 
-            <a href=""><button class="btn">Submit</button></a>
+          <!-- The Form -->
+          <h1 class="text-primary">Search for a city</h1>
+          <form id="city-form" class="mb-2 card-body">
+            <input id="city-input" class="form-input w-100" type="text" placeholder="Enter a city name">
+            <a id ="submit-btn"><button class="btn">Submit</button></a>
           </form>
+
+          <!-- Search History -->
+          <div id="city-search-history" class="text-align-center"> 
+            Search History 
+            <ul id="saved-searches" class="list-group">
+          </ul>
+          </div>
         </div>
 
-    <!-- Search Results -->
-        <div class="col-12 col-md-9 p-3 text-light">
-          <h2>Showing results for <span id="result-text"></span></h2>
-          <div id="result-content"></div>
+                                                  <!-- Search Results -->
+
+    <!-- Current Weather -->
+        <div id="result-container" class="col-12 col-md-9 p-3 text-light">
+          <h5 class="card-title"> City </h5> 
+          <div class = card id ="current-weather-card">
+          <h2> City: <span id="city-name"></span></h2>
+          <div id="result-content"> </div>
         </div>
-      </div>
-    
-  
+
+                                                   <!-- 5-Day Forecast -->
+
+        <h5 class="card-title">5 Day Forecast</h5> 
+         <div class="row">
+         <div class="col">
+        <div class="shadow p-3 mb-5 card" id="five-day-forecast">
+        <div class="card-deck">
+
+          <!-- Day One -->
+            <div class="card">
+                <div class="card-body" id="day-one">
+                    <h5 id="day-one-date" class="card-title"></h5>
+                    <img id="day-one-icon">
+                    <p id="day-one-temp" class="card-text"></p>
+                    <br>
+                    <p id="day-one-humid" class="card-text"></p>
+                </div>
+            </div>
+
+            <!-- Day two -->
+            <div class="card">
+                <div class="card-body" id="day-two">
+                    <h5 id="day-two-date" class="card-title"></h5>
+                    <img id="day-two-icon">
+                    <p id="day-two-temp" class="card-text"></p>
+                    <br>
+                    <p id="day-two-humid" class="card-text"></p>
+                </div>
+            </div>
+
+              <!-- Day three -->
+            <div class="card">
+                <div class="card-body" id="day-three">
+                    <h5 id="day-three-date" class="card-title"></h5>
+                    <img id="day-three-icon">
+                    <p id="day-three-temp" class="card-text"></p>
+                    <br>
+                    <p id="day-three-humid" class="card-text"></p>
+                </div>
+            </div>
+
+               <!-- Day Four -->
+            <div class="card">
+                <div class="card-body" id="day-four">
+                    <h5 id="day-four-date" class="card-title"></h5>
+                    <img id="day-four-icon">
+                    <p id="day-four-temp" class="card-text"></p>
+                    <br>
+                    <p id="day-four-humid" class="card-text"></p>
+                </div>
+            </div>
+
+
+            <!-- Day Five -->
+            <div class="card">
+                <div class="card-body" id="day-five">
+                    <h5 id="day-five-date" class="card-title"></h5>
+                    <img id="day-five-icon">
+                    <p id="day-five-temp" class="card-text"></p>
+                    <br>
+                    <p id="day-five-humid" class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
     <script src="script.js"></script>
 </body>
 </html>
