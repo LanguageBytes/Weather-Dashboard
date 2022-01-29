@@ -15,10 +15,11 @@ body {
     font-weight: 700;
   }
   
-  .submit-btn {
+  .btn {
     padding: 2%;
     justify-content: center;
     display: flex;
+    width: 8rem;
   }
 
 
@@ -27,4 +28,35 @@ body {
       font-size: 3rem;
       text-align: center;
       padding: 1.5rem;
+      background-color: rgb(234, 241, 238);
+      display: flex;
+      justify-content: center;
+  }
+
+  .text-align-center {
+      text-align: center;
+  }
+
+
+  .card-deck {
+
+    width: 100rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+
+    width: 120rem;
+    display: flex;
+    padding-top: 10rem;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 3rem;
+  }
+
+  #city-search-history {
+    color:black;
   }
