@@ -1,26 +1,13 @@
-# Weather-Dashboard
+# <p class="align-center"> Weather-Dashboard </p>
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-Use the OpenWeather One Call API to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use localStorage to store any persistent data. For more information on how to work with the OpenWeather API, refer to the Full-Stack Blog on how to use API keys.
 
-User Story
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+This is a simple Weather web application which uses a Third-Party-API, OpenWeather, to generate a personalised search result based on the user input.The application allows the user to type in a city name and be presented with a set of results. 
 
-Acceptance Criteria
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
+The results are split into two sections: the Current Weather and 5-Day Weather Forecast.
 
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+The current weather displays the chosen city, its current date, temperature, wind speed, humidity and UV index. The user is able to visually see what the weather is like through an icon displayed next to the data. The user is able to determine whether the UV index is favourable, moderate or severe through a colour coded system. If the UV result is red, it is high, if it is orange, it is moderate, if it is green it is favourable.
 
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+The 5-Day Weather forecast displays the weather predictions for the next 5 days. They follow the same format as the current weather, minus the UV index.
 
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+The user is then able to return a previously searched city by accessing their search history, this is displayed on the bottom left part of the screen.
 
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
