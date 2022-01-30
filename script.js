@@ -18,7 +18,7 @@ var windSpeed = document.getElementById("current-wind-speed");
 var textColour = document.getElementById("text-colour");
 var currentUvIndex = document.getElementById("current-uv-index");
 
-//5-Day
+//5-Day Data
 
 //Day One
 var dayOneDateEl = document.getElementById("day-one-date");

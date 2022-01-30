@@ -4,18 +4,19 @@
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 10rem;
+    font-size: 5rem;
     background-image: url("clouds.jpg");
 }
 
 h1,h2,h3 {
     border-width: 200px;
-    background-color: rgb(3, 91, 94);
+    background-color: rgb(13, 119, 121);
     color: rgb(255, 255, 255);
     text-align: center;
     margin-top: auto;
     padding: 25px 0;
-    font-size: 10rem;
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
   }
   
   p {
