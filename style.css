@@ -1,62 +1,63 @@
+/* Importing Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 10rem;
+    background-image: url("clouds.jpg");
+}
+
+h1,h2,h3 {
+    border-width: 200px;
+    background-color: rgb(3, 91, 94);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: auto;
+    padding: 25px 0;
+    font-size: 10rem;
+  }
+  
+  p {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text-align-center {
+    text-align: center;
+}
+
+  .submit {
+background-color: rgb(6, 94, 82);
+color: white;
+border-radius: 10%;
+  }
+
+  .card-deck {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
+  }
+
+.list {
+  padding: 2rem;
+  width: 12rem;
+  margin-left: 3rem;
+}
+
+.danger {
+
+    color:rgb(128, 0, 0);
+}
+
+.good {
+
+    color:rgb(0, 128, 11);
 }
 
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-  }
-  
-  .btn {
-    padding: 2%;
-    justify-content: center;
-    display: flex;
-    width: 8rem;
-  }
+.medium {
 
-
-  header {
-      margin:0;
-      font-size: 3rem;
-      text-align: center;
-      padding: 1.5rem;
-      background-color: rgb(234, 241, 238);
-      display: flex;
-      justify-content: center;
-  }
-
-  .text-align-center {
-      text-align: center;
-  }
-
-
-  .card-deck {
-
-    width: 100rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .card {
-
-    width: 120rem;
-    display: flex;
-    padding-top: 10rem;
-    justify-content: center;
-  }
-
-  .card-title {
-    font-size: 3rem;
-  }
-
-  #city-search-history {
-    color:black;
-  }
+    color:rgb(0, 128, 11);
+}
