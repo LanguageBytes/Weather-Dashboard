@@ -64,6 +64,20 @@ border-radius: 10%;
   margin-left: 3rem;
 }
 
+
+.card-container {
+
+  padding-bottom: 5rem;
+
+}
+  .card-deck {
+    padding: 1rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    display: flex;
+  }
+
+}
 /* Changes depending on the UV Conditions */
 .danger {
     color:rgb(128, 0, 0);
