@@ -1,4 +1,4 @@
-# <p align = "center"> Weather-Dashboard </p>
+# <p align = "center"> Weather Dashboard </p>
 
 
 <p align="center"> Link to deployed site: https://languagebytes.github.io/Weather-Dashboard/ </p>
