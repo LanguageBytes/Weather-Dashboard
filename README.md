@@ -1,4 +1,4 @@
-# <p align = "center"> Weather-Dashboard </p>
+# <p align = "center"> Weather Dashboard </p>
 
 
 This is a simple Weather web application which uses a Third-Party-API, OpenWeather, to generate a personalised search result based on the user input.The application allows the user to type in a city name and be presented with a set of results. 
