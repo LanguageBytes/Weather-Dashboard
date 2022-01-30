@@ -177,7 +177,6 @@ function currentWeather (event) {
     var fiveDayUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchedCity}&units=metric&appid=a779700c959c351facd0defc1a67317d`
 
   //Five-Day API fetch request
-    console.log(fiveDayUrl);
     fetch(fiveDayUrl)
       .then(function (response) {
           if (response.ok) {
