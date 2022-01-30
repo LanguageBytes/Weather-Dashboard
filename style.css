@@ -23,41 +23,56 @@ h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
   }
   
-  .text-align-center {
+.text-align-center {
     text-align: center;
 }
 
+.align-center {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Submit Button */
   .submit {
 background-color: rgb(6, 94, 82);
 color: white;
 border-radius: 10%;
   }
 
-  .card-deck {
+  /* Cards */
+.card-deck {
     width: 60rem;
     display: flex;
     justify-content: center;
     margin-left: 10rem;
   }
 
+.card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* Saved */
 .list {
   padding: 2rem;
   width: 12rem;
   margin-left: 3rem;
 }
 
+/* Changes depending on the UV Conditions */
 .danger {
-
     color:rgb(128, 0, 0);
 }
 
 .good {
-
     color:rgb(0, 128, 11);
 }
 
 
 .medium {
-
-    color:rgb(0, 128, 11);
+    color:rgb(204, 147, 71);
 }
