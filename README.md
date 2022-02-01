@@ -1,5 +1,10 @@
 # <p align = "center"> Weather Dashboard </p>
 
+<br> 
+ <p align="center">
+  <img src="images/screenshot.gif"/>
+</p>
+
 
 <p align="center"> Link to deployed site: https://languagebytes.github.io/Weather-Dashboard/ </p>
 
