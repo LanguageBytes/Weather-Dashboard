@@ -62,7 +62,6 @@ var displayCityName = document.getElementById("city-name")
 var cities = [];
 
 
-
                                                 //Functions Begin
 
 
@@ -93,7 +92,6 @@ function pushCity () {
 //Will save it in local storage
     localStorage.setItem("searchedCity", addCityArray);
 }
-
 
 
                                                                            //Current Weather 
