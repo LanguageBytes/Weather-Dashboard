@@ -18,7 +18,7 @@
 <body>
 
     <!-- Title -->
-    <header><h1>Weather Dashboard</h1> </header>
+    <header><h1>Weather Dashboard &nbsp; <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-sun-weather-justicon-flat-justicon-2.png"/> </h1> </header>
 
   <!-- Search Form and History Column-->
 
@@ -36,12 +36,16 @@
                 </form>
             </div>
 
+            <br>
+
             <!-- Search History -->
-            <div><h2> Your Search History   <button type="submit" class="submit" id="delete-btn"> Delete </button></h2></div>
                 <div class="card">
+                    <div class="card-body">
+                    <div><h2> Your Search History   <button type="submit" class="submit" id="delete-btn"> Delete </button></h2></div>
                     <ul id="stored-searches" class="list-button">
                     </ul>
                 </div>
+            </div>
         </div>
 
         
@@ -63,7 +67,7 @@
 <!-- 5-Day Forecast -->
             <div class="row">
                 <div class="col">
-                    <div class="card card-container" id="five-day-forecast">
+                    <div class="card card-container p-3" id="five-day-forecast">
                         <h3 class="card-title">5 Day Forecast</h3> 
                         <div class="card-deck">
 
