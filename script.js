@@ -92,16 +92,22 @@ function pushCity () {
     localStorage.setItem("searchedCity", addCityArray);
 }
 
+Object.defineProperty(String.prototype, 'capitalize', {
+    value: function() {
+      return this.charAt(0).toUpperCase() + this.slice(1);
+    },
+    enumerable: false
+  });
 
                                                                            //Current Weather 
 function currentWeather (event) {
     event.preventDefault();
 
 //Will pass into the stored cities
-    var searchedCity = searchInput.value.trim();
+    var searchedCity = searchInput.value.trim().capitalize();
     var savedCity = document.createElement("button");
     savedCity.className = "list";
-    savedCity.innerHTML = searchInput.value;
+    savedCity.innerHTML = searchInput.value.capitalize();
     stored.appendChild(savedCity);
 
     //Current Weather API fetch request
