@@ -20,7 +20,7 @@
     <!-- Title -->
     <header><h1>Weather Dashboard</h1> </header>
 
-                                                           <!-- Search Form and History Column Part -->
+  <!-- Search Form and History Column-->
 
     <!-- Search for a City -->
     <div class="container-flex-column">
@@ -31,13 +31,13 @@
             <div class="card">
                 <form class="card-body" id="city-form">
                     <h2 class="card-title">Search for a City</h5>
-                    <input class="card-text" id="city-input" placeholder="Enter a city name" onfocus="this.value=''"></input>
+                    <input class="card-text" id="city-input" placeholder="Enter a city name" onfocus="this.value='"></input>
                     <button type="submit" class="submit" id="submit-btn"> Submit </button>
                 </form>
             </div>
 
-           <!-- Search History -->
-            <div><h2> Your Search History </h2></div>
+            <!-- Search History -->
+            <div><h2> Your Search History   <button type="submit" class="submit" id="delete-btn"> Delete </button></h2></div>
                 <div class="card">
                     <ul id="stored-searches" class="list-button">
                     </ul>
@@ -45,8 +45,7 @@
         </div>
 
         
-                                                               <!-- Current Weather -->
-
+ <!-- Current Weather -->
         <div class="container col-md-8">
             <div class="card" id="current-weather-card">
                 <div class="card-body">
@@ -60,7 +59,8 @@
             </div>
 
             <br>
-                                                               <!-- 5-Day Forecast -->
+
+<!-- 5-Day Forecast -->
             <div class="row">
                 <div class="col">
                     <div class="card card-container" id="five-day-forecast">

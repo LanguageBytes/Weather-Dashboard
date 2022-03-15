@@ -1,5 +1,3 @@
-                                                       //Declaring variables
-
 //API Variables (used for reference purposes)
 var cityAPIPath = "https://api.openweathermap.org/data/2.5/weather?q="
 var myAPIKey = "&appid=a779700c959c351facd0defc1a67317d"
@@ -9,6 +7,7 @@ var oneCallAPI = "https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon
 //The Form and Container Parts
 var searchInput = document.getElementById("city-input");
 var submitBtn = document.getElementById("submit-btn");
+var deleteBtn = document.getElementById("delete-btn")
 
 //Current Data 
 var currentIcon = document.getElementById("current-icon");
@@ -170,7 +169,7 @@ function currentWeather (event) {
       })
 
 
-                                                                       // Five-Day Forecast
+      // Five-Day Forecast
 
     var fiveDayUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchedCity}&units=metric&appid=a779700c959c351facd0defc1a67317d`
 
@@ -264,10 +263,10 @@ function currentWeather (event) {
             console.log(searchedCity);
 
 
-                                                    //THE ORIGINAL PROCESS IS TO BE REPEATED AGAIN
 
+            // Repeating process
 
-                                                             //Current Weather
+     //Current Weather
 
             var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&units=metric&appid=a779700c959c351facd0defc1a67317d`
 
@@ -387,8 +386,13 @@ function currentWeather (event) {
 
         })}
 
-
+function removeStorage (event) {
+    event.preventDefault();
+    localStorage.removeItem("searchedCity")
+    window.location.reload();
+}
 //Event listener for submit button
+deleteBtn.addEventListener("click", removeStorage)
 submitBtn.addEventListener("click", currentWeather)
 submitBtn.addEventListener("click", pushCity)
 
