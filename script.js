@@ -85,7 +85,7 @@ if (localStorage.getItem("searchedCity")) {
 
 //Will take the user's input and push it to the cities array
 function pushCity () {
-    var searchedCity = searchInput.value.trim()
+    var searchedCity = searchInput.value.trim().capitalize()
     var addCityArray = cities
     addCityArray.push(searchedCity)
 //Will save it in local storage
@@ -265,7 +265,7 @@ function currentWeather (event) {
         returnSearch.addEventListener('click', function(event) {
             event.preventDefault();
 
-            var searchedCity = this.innerHTML
+            var searchedCity = this.innerHTML.capitalize()
             console.log(searchedCity);
 
 
