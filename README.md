@@ -22,6 +22,7 @@ The user is then able to return a previously searched city by accessing their se
 # <p align = "center"> Future Developments </p>
 
 - Changing date formatting
+- Local storage - security with inner html and also slow, adding cities already been searched
 - Adding UV icons instead of colours
 - Changing the layout from card boxes to something more visually exciting
 - Adding more features - should I go for a walk today? Weather news API
