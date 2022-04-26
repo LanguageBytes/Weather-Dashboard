@@ -60,10 +60,7 @@ var displayCityName = document.getElementById("city-name")
 //Empty array for storage
 var cities = [];
 
-
-                                                //Functions Begin
-
-
+//Functions Begin
 //Get any local Storage first before making new searches
 if (localStorage.getItem("searchedCity")) {
     cities = localStorage.getItem("searchedCity");
@@ -267,8 +264,6 @@ function currentWeather (event) {
 
             var searchedCity = this.innerHTML.capitalize()
             console.log(searchedCity);
-
-
 
             // Repeating process
 
